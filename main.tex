@@ -1,47 +1,150 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}
-\usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{booktabs}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage{setspace}
-\onehalfspacing
+% ==========================================================
+% main.tex - IFPI Company Standard Template
+% Based on: modelo-artigo.tex (Academic Article Template)
+% Author: José Nilton Silva Lima
+% Adapted for Company Use
+% ==========================================================
 
-% IFPI Company Style
+\documentclass[a4paper,12pt]{article}
 \usepackage{artigotemplate}
 
-\title{IFPI Technical Documentation}
-\author{Company Name}
-\date{\today}
+% === COMPANY DATA ===
+\titulo{TÍTULO DO ARTIGO: Subtítulo do artigo}
+\autor{Company Author Name}
+\instituicao{Company Name}
+\campus{Company Department}
+\curso{Technical Documentation}
+\cidade{Company Location}
+\ano{2026}
+\orientador{Supervisor Name}
 
+% === DOCUMENT START ===
 \begin{document}
-\maketitle
 
-\begin{abstract}
-This is the IFPI company standard template for technical documentation.
-\end{abstract}
+% === COVER PAGES ===
+\capaartigo
+\clearpage
+\contracapaartigo
+\clearpage
 
-\section{Introduction}
-\label{sec:intro}
-Introduction to the technical document.
+% === CONTENT START ===
+\iniciarpaginacao
+\infoartigo
 
-\section{Methodology}
-\label{sec:method}
-Methodology section.
+% === RESUMO ===
+\resumo{
+Escreva aqui o resumo do artigo.
+}{
+palavra-chave 01, palavra-chave 02, palavra-chave 03.
+}
 
-\section{Results}
-\label{sec:results}
-Results section.
+% === ABSTRACT ===
+\abstracten{
+Traduza aqui o resumo para o inglês.
+}{
+Keywords 01, Keywords 02, Keywords 03.
+}
 
-\section{Conclusion}
-\label{sec:conclusion}
-Conclusion section.
+\dataaprovacao{xx/xx/xxxx}
 
-\bibliographystyle{plain}
+% === INTRODUÇÃO ===
+\section{Introdução}
+
+A introdução apresenta o tema, sua relevância e os objetivos da pesquisa. Contextualize o problema e justifique o estudo. Para incluir citações no texto, utilize os comandos: De acordo com \citeonline{cassal2021} ou .
+
+% === REFERENCIAL TEÓRICO ===
+\section{Referencial Teórico}
+Apresente o embasamento teórico que sustenta a pesquisa.
+Descreva as principais teorias, autores e estudos relacionados ao tema \cite{nussenzveig2013}.
+
+\subsection{Exemplo de Subseção}
+Use subseções para organizar melhor o conteúdo teórico.
+
+\subsubsection{Exemplo de Subsubseção}
+Use subsubseções apenas quando necessário para detalhar tópicos específicos.
+
+Como fazer uma citação direta:
+\begin{citacaodireta}
+Inclua aqui o trecho exato retirado da fonte, seguido da referência.
+Inclua aqui o trecho exato retirado da fonte, seguido da referência.
+Inclua aqui o trecho exato retirado da fonte, seguido da referência.
+Inclua aqui o trecho exato retirado da fonte, seguido da referência.
+Inclua aqui o trecho exato retirado da fonte, seguido da referência \cite[p.~5]{nussenzveig2013}.
+\end{citacaodireta}
+
+% === METODOLOGIA ===
+\section{Metodologia}
+Descreva detalhadamente como a pesquisa foi conduzida.
+Inclua o tipo de pesquisa, materiais utilizados, métodos de coleta e análise de dados, e o procedimento adotado.
+
+\begin{figuraCustom}{Exemplo de como inserir uma imagem.}
+\includegraphics[width=0.5\linewidth]{imagens/imagem_exemplo.png}
+\fonte{Elaborado pelos autores.}
+\end{figuraCustom}
+
+\begin{tabelaCustom}{Exemplo de uma tabela.}
+\begin{tabular}{c|c|c}
+\hline
+Categoria & Média & Desvio Padrão \\
+\hline
+Grupo 1 & 12.47 & 0.83 \\
+Grupo 2 & 15.32 & 1.12 \\
+Grupo 3 & 14.05 & 0.97 \\
+Grupo 4 & 16.28 & 1.35 \\
+\hline
+\end{tabular}
+\fonte{Elaborado pelos autores.}
+\end{tabelaCustom}
+
+\begin{quadroCustom}{Exemplo de um Quadro.}
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+\textbf{Coluna 1} & \textbf{Coluna 2} \\
+\hline
+Descrição detalhada do elemento A, podendo conter múltiplas linhas de texto. &
+Conteúdo explicativo associado ao elemento A, com detalhamento técnico ou observações adicionais. \\
+\hline
+Descrição do elemento B, incluindo informações complementares relevantes. &
+Informações adicionais sobre o elemento B, podendo conter dados numéricos, interpretações ou observações críticas. \\
+\hline
+\end{tabular}
+\fonte{Elaborado pelos autores.}
+\end{quadroCustom}
+
+\begin{citacaoCodigo}[Exemplos de Linhas de códigos.]
+\begin{blocoDeCodigo}
+function main(): void {
+  const mensagem: string = "Hello, World!";
+  console.log(mensagem);
+}
+
+main();
+\end{blocoDeCodigo}
+\fonte{Elaborado pelos autores.}
+\end{citacaoCodigo}
+
+% === RESULTADOS ===
+\section{Resultados e Discussão}
+Apresente os resultados obtidos, preferencialmente com apoio de tabelas, gráficos ou figuras.
+Interprete e discuta os resultados à luz do referencial teórico.
+
+% === CONCLUSÕES ===
+\section{Conclusões e Trabalhos Futuros}
+Resuma as principais conclusões da pesquisa.
+Indique limitações do estudo e sugestões para trabalhos futuros.
+
+% === REFERÊNCIAS ===
 \bibliography{references}
+
+% === APÊNDICES ===
+\apendice{A}{Título do Apêndice}
+Texto ou conteúdo do apêndice...
+
+% === ANEXOS ===
+\anexo{A}{Título do Anexo}
+Texto ou conteúdo do anexo...
+
+\anexo{B}{Título do Anexo}
+Texto ou conteúdo do anexo...
 
 \end{document}
