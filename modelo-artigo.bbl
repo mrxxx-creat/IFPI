@@ -1,0 +1,19 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Cassal, Orengo e Isaia 2021]{cassal2021}
+\abntrefinfo{Cassal, Orengo e Isaia}{CASSAL; ORENGO; ISAIA}{2021}
+{CASSAL, M.~L.; ORENGO, G.; ISAIA, S.~M. d. A. O problema do lançamento
+  oblíquo no ensino de física com abordagem na programação de computadores.
+\emph{Revista Educar Mais}, v.~5, n.~4, p. 878--900, 2021.}
+
+\bibitem[Nussenzveig 2013]{nussenzveig2013}
+\abntrefinfo{Nussenzveig}{NUSSENZVEIG}{2013}
+{NUSSENZVEIG, H.~M. \emph{Curso de Física Básica, Volume 1: Mecânica}. 5.
+  ed. São Paulo: Editora Blucher, 2013.}
+
+\end{thebibliography}

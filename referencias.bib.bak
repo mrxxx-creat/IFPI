@@ -1,0 +1,19 @@
+@book{nussenzveig2013,
+  author    = {H. M. Nussenzveig},
+  title     = {Curso de Física Básica, Volume 1: Mecânica},
+  year      = {2013},
+  publisher = {Editora Blucher},
+  address   = {São Paulo},
+  edition   = {5},
+}
+
+@article{cassal2021,
+  author  = {M. L. Cassal and G. Orengo and S. M. d. A. Isaia},
+  title   = {O problema do lançamento oblíquo no ensino de física com abordagem na programação de computadores},
+  journal = {Revista Educar Mais},
+  volume  = {5},
+  number  = {4},
+  pages   = {878--900},
+  year    = {2021}
+}
+
